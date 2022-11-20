@@ -470,7 +470,7 @@
             },
             {
               "type": 0,
-              "width": 1116,
+              "width": 1280,
               "height": 1109,
               "currentContent": "State Machine",
               "tabs": [
@@ -493,7 +493,7 @@
             },
             {
               "type": 0,
-              "width": 519,
+              "width": 355,
               "height": 1109,
               "currentContent": "Inspector",
               "tabs": [
@@ -563,24 +563,24 @@
               "feedbackOnly": false
             },
             {
-              "hexMode": false,
-              "controlAddress": "/duration",
-              "type": "Integer",
-              "niceName": "duration",
+              "value": 201.0,
+              "controlAddress": "/dir",
+              "type": "Float",
+              "niceName": "dir",
               "customizable": true,
               "removable": true,
-              "description": "",
+              "description": "dir",
               "hideInEditor": false,
               "feedbackOnly": false
             },
             {
-              "hexMode": false,
-              "controlAddress": "/temps",
-              "type": "Integer",
-              "niceName": "temps",
+              "value": 500.0,
+              "controlAddress": "/speed",
+              "type": "Float",
+              "niceName": "speed",
               "customizable": true,
               "removable": true,
-              "description": "",
+              "description": "speed",
               "hideInEditor": false,
               "feedbackOnly": false
             }
@@ -699,17 +699,6 @@
               "description": "",
               "hideInEditor": false,
               "feedbackOnly": false
-            },
-            {
-              "hexMode": false,
-              "controlAddress": "/_mode",
-              "type": "Integer",
-              "niceName": "/mode",
-              "customizable": true,
-              "removable": true,
-              "description": "",
-              "hideInEditor": false,
-              "feedbackOnly": false
             }
           ]
         }
@@ -777,8 +766,8 @@
         "parameters": [
           {
             "value": [
-              -223.0,
-              -1886.0
+              -491.0,
+              -1749.0
             ],
             "controlAddress": "/viewUIPosition"
           },
@@ -799,12 +788,6 @@
         "processors": {
           "items": [
             {
-              "parameters": [
-                {
-                  "value": true,
-                  "controlAddress": "/enabled"
-                }
-              ],
               "niceName": "Action",
               "type": "Action",
               "conditions": {
@@ -920,10 +903,41 @@
                           {
                             "parameters": [
                               {
-                                "value": 0,
+                                "value": 201,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/modules/oscMain/values/_duration",
+                                  "value": "/customVariables/customVariables/values/control/mode",
+                                  "controlAddress": "/reference"
+                                },
+                                "hexMode": false,
+                                "controlAddress": "/#3"
+                              },
+                              {
+                                "value": "1 byte",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#3",
+                            "type": "Integer",
+                            "param": {
+                              "value": 201,
+                              "controlMode": 2,
+                              "reference": {
+                                "value": "/customVariables/customVariables/values/control/mode",
+                                "controlAddress": "/reference"
+                              },
+                              "hexMode": false,
+                              "controlAddress": "/states/sendSerial/processors/action/consequencesTRUE/consequence/command/arguments/#3/#3"
+                            }
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 700,
+                                "controlMode": 2,
+                                "reference": {
+                                  "value": "",
+                                  "ghostValue": "/customVariables/customVariables/values/control/vitesse",
                                   "controlAddress": "/reference"
                                 },
                                 "hexMode": false,
@@ -934,17 +948,18 @@
                                 "controlAddress": "/precision"
                               }
                             ],
-                            "niceName": "#3 1",
+                            "niceName": "#4",
                             "type": "Integer",
                             "param": {
-                              "value": 0,
+                              "value": 700,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/modules/oscMain/values/_duration",
+                                "value": "",
+                                "ghostValue": "/customVariables/customVariables/values/control/vitesse",
                                 "controlAddress": "/reference"
                               },
                               "hexMode": false,
-                              "controlAddress": "/states/sendSerial/processors/action/consequencesTRUE/consequence/command/arguments/#31/#4"
+                              "controlAddress": "/states/sendSerial/processors/action/consequencesTRUE/consequence/command/arguments/#4/#4"
                             }
                           },
                           {
@@ -959,12 +974,12 @@
                                 "controlAddress": "/precision"
                               }
                             ],
-                            "niceName": "#4",
+                            "niceName": "#5",
                             "type": "Integer",
                             "param": {
                               "value": 0,
                               "hexMode": false,
-                              "controlAddress": "/states/sendSerial/processors/action/consequencesTRUE/consequence/command/arguments/#4/#5"
+                              "controlAddress": "/states/sendSerial/processors/action/consequencesTRUE/consequence/command/arguments/#5/#5"
                             }
                           }
                         ],

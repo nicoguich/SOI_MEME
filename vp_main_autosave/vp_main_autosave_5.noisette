@@ -583,6 +583,28 @@
               "description": "",
               "hideInEditor": false,
               "feedbackOnly": false
+            },
+            {
+              "hexMode": false,
+              "controlAddress": "/home",
+              "type": "Integer",
+              "niceName": "home",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "hexMode": false,
+              "controlAddress": "/offset",
+              "type": "Integer",
+              "niceName": "offset",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
             }
           ]
         },
@@ -777,15 +799,15 @@
         "parameters": [
           {
             "value": [
-              -223.0,
-              -1886.0
+              -371.0,
+              -1861.0
             ],
             "controlAddress": "/viewUIPosition"
           },
           {
             "value": [
-              304.0,
-              134.0
+              246.0,
+              200.0
             ],
             "controlAddress": "/viewUISize"
           },
@@ -998,11 +1020,129 @@
           ],
           "viewZoom": 1.0
         }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -115.0,
+              -1861.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "send osc",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "Action",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/serial/values/home",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": 0,
+                          "hexMode": false,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "oscMain",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/home",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 0,
+                                "hexMode": false,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Integer",
+                            "param": {
+                              "value": 0,
+                              "hexMode": false,
+                              "controlAddress": "/states/sendOsc/processors/action/consequencesTRUE/consequence/command/arguments/#1/#1"
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
       }
     ],
     "viewOffset": [
       27,
-      1471
+      1564
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -1017,7 +1157,7 @@
       "hideInEditor": true,
       "viewOffset": [
         27,
-        1471
+        1564
       ],
       "viewZoom": 1.0
     }

@@ -583,6 +583,17 @@
               "description": "",
               "hideInEditor": false,
               "feedbackOnly": false
+            },
+            {
+              "hexMode": false,
+              "controlAddress": "/home",
+              "type": "Integer",
+              "niceName": "home",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
             }
           ]
         },
