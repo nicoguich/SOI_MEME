@@ -59,25 +59,47 @@ Serial.println(pos);
 Serial.print( "duration ");
 Serial.println(duration);
 
-vitesse= abs(stepper.currentPosition()-pos)/duration;
+vitesse= abs(pos-(stepper.currentPosition()-pos_offset))/duration;
 
 switch (mode) {
 case 0 :
 check_home=0;
+Serial.print( "home ");
+Serial.println(check_home);
+Serial.print( "mode ");
+Serial.println(mode);
 break;
 
 case 1 :
-stepper.moveTo(pos+pos_offset);
-stepper.setMaxSpeed(vitesse);
-check_temps=0;
+check_home=0;
+Serial.print( "home ");
+Serial.println(check_home);
+Serial.print( "mode ");
+Serial.println(mode);
 break;
 
 case 2 :
+stepper.moveTo(pos+pos_offset);
+stepper.setMaxSpeed(200);
+check_temps=0;
+break;
+
+case 3 :
 pos_offset=stepper.currentPosition();
 EEPROM.update(0, pos_offset);
 Serial.print( "offset ");
 Serial.println(pos_offset);
 mode=-1;
+break;
+
+case 4 :
+stepper.moveTo(pos+pos_offset);
+stepper.setMaxSpeed(vitesse);
+check_temps=0;
+break;
+
+case 5 :
+stepper.stop();
 break;
 
 
