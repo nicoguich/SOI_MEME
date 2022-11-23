@@ -426,7 +426,7 @@
                 {
                   "type": 0,
                   "width": 273,
-                  "height": 379,
+                  "height": 380,
                   "currentContent": "Modules",
                   "tabs": [
                     {
@@ -437,7 +437,7 @@
                 {
                   "type": 0,
                   "width": 273,
-                  "height": 296,
+                  "height": 297,
                   "currentContent": "Custom Variables",
                   "tabs": [
                     {
@@ -668,7 +668,7 @@
                       "controlAddress": "/local"
                     },
                     {
-                      "value": "192.168.100.180",
+                      "value": "192.168.2.200",
                       "controlAddress": "/remoteHost"
                     },
                     {

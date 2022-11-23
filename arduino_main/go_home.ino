@@ -6,6 +6,7 @@ void go_home(){
     
     vitesse_home=-100;
   }
+  stepper.setMaxSpeed(vitesse_home);
 stepper.setSpeed(vitesse_home);
   int capteur =  analogRead(A0);
   pos = stepper.currentPosition();
@@ -14,7 +15,7 @@ Serial.print("capteur ");
   Serial.println(capteur);
 Serial.print("pos ");
   Serial.println(pos);
-  if (capteur > 250){
+  if (capteur > limit_capteur){
     stepper.runSpeed();
     if (abs(pos)> 800){
       vitesse_home=vitesse_home*-1;
