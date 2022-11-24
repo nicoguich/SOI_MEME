@@ -5,7 +5,7 @@
 AccelStepper stepper (1, 3, 4); 
 int vitesse=200, vitesse_home=100;
 int check_fin_course =0;
-int limit_capteur=250;
+int limit_capteur=260;
 
 int pos=0, mode=-1;
 int duration;
