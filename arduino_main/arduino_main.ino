@@ -8,10 +8,11 @@ int check_fin_course =0;
 int limit_capteur=260;
 
 int pos=0, mode=-1,duration;
-int check_home=1;
+int check_home=0;
 int check_temps=0;
 int pos_offset;
 long temps=0;
+int limit_init=100;
 
 const int BUFFER_SIZE = 5;
 char data[BUFFER_SIZE];
@@ -25,7 +26,14 @@ void setup()
   
 
   Serial.setTimeout(100);
-pos_offset = EEPROM.read(0);
+
+
+
+
+  
+  byte byte1 = EEPROM.read(0);
+  byte byte2 = EEPROM.read(1);
+  pos_offset =int( (byte1 << 8) + byte2);
 Serial.print( "home ");
 Serial.println(0);
 
@@ -56,6 +64,8 @@ else{
 
 Serial.print( "pos ");
 Serial.println(pos);
+Serial.print( "mode ");
+Serial.println(mode);
 
 Serial.print( "duration ");
 Serial.println(duration);
@@ -77,6 +87,8 @@ Serial.print( "home ");
 Serial.println(check_home);
 Serial.print( "mode ");
 Serial.println(mode);
+vitesse_home=100;
+stepper.setCurrentPosition(0);
 break;
 
 case 2 :
@@ -87,16 +99,22 @@ break;
 
 case 3 :
 pos_offset=stepper.currentPosition();
-EEPROM.update(0, pos_offset);
+
+  EEPROM.write(0, byte(pos_offset >> 8));
+  delay(200);
+  EEPROM.write( 1, byte(pos_offset & 0xFF));
+delay(200);
 Serial.print( "offset ");
 Serial.println(pos_offset);
-mode=-1;
+
 break;
 
 case 4 :
 stepper.moveTo(pos+pos_offset);
 stepper.setMaxSpeed(vitesse);
 check_temps=0;
+Serial.print("receive ");
+Serial.println(1);
 break;
 
 case 5 :
@@ -109,8 +127,14 @@ break;
   }
 
     if ((check_temps==0)&&(stepper.distanceToGo() == 0)){
-      Serial.print("temps ");
-      Serial.println(millis()-temps);
+Serial.print( "offset ");
+Serial.println(pos_offset);
+
+Serial.print( "pos ");
+Serial.println(pos);
+
+Serial.print( "duration ");
+Serial.println(duration);
       check_temps=1;
     }
 
