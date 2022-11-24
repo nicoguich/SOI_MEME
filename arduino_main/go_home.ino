@@ -6,9 +6,9 @@ stepper.setSpeed(vitesse_home);
   int capteur =  analogRead(A0);
   pos = stepper.currentPosition();
 
-/*Serial.print("capteur ");
+Serial.print("capteur ");
   Serial.println(capteur);
-*/
+
   if (capteur > limit_capteur){
     stepper.runSpeed();
     if (abs(pos)>= limit_init){

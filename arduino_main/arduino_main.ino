@@ -28,7 +28,7 @@ void setup()
   Serial.setTimeout(100);
 
 
-
+pinMode(6,OUTPUT);
 
   
   byte byte1 = EEPROM.read(0);
@@ -121,6 +121,14 @@ case 5 :
 stepper.stop();
 break;
 
+
+case 6 :
+  stepper.setAcceleration(pos);
+break;
+
+case 7 :
+  analogWrite(6,pos);
+break;
 
 
 }

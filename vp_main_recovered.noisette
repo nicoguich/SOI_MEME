@@ -546,7 +546,7 @@
         "values": {
           "parameters": [
             {
-              "value": -200.0,
+              "value": 13.0,
               "controlAddress": "/pos",
               "type": "Float",
               "niceName": "pos",
@@ -557,7 +557,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 5,
+              "value": 0,
               "hexMode": false,
               "controlAddress": "/duration",
               "type": "Integer",
@@ -593,7 +593,7 @@
               "feedbackOnly": false
             },
             {
-              "value": -1000,
+              "value": 86,
               "hexMode": false,
               "controlAddress": "/offset",
               "type": "Integer",
@@ -616,7 +616,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 3.0,
+              "value": 4.0,
               "controlAddress": "/mode",
               "type": "Float",
               "niceName": "mode",
@@ -627,6 +627,7 @@
               "feedbackOnly": false
             },
             {
+              "value": 1.0,
               "controlAddress": "/receive",
               "type": "Float",
               "niceName": "receive",
@@ -719,23 +720,10 @@
         "values": {
           "parameters": [
             {
-              "value": 113,
               "hexMode": false,
               "controlAddress": "/_acc",
               "type": "Integer",
               "niceName": "/acc",
-              "customizable": true,
-              "removable": true,
-              "description": "",
-              "hideInEditor": false,
-              "feedbackOnly": false
-            },
-            {
-              "value": 5,
-              "hexMode": false,
-              "controlAddress": "/_duration",
-              "type": "Integer",
-              "niceName": "/duration",
               "customizable": true,
               "removable": true,
               "description": "",
@@ -755,20 +743,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 0,
-              "hexMode": false,
-              "controlAddress": "/_offset",
-              "type": "Integer",
-              "niceName": "/offset",
-              "customizable": true,
-              "removable": true,
-              "description": "",
-              "hideInEditor": false,
-              "feedbackOnly": false,
-              "shortName": "_offset"
-            },
-            {
-              "value": -30,
+              "value": 2,
               "alwaysNotify": true,
               "hexMode": false,
               "controlAddress": "/_pos_to",
@@ -851,7 +826,7 @@
             {
               "parameters": [
                 {
-                  "value": -200,
+                  "value": 13,
                   "hexMode": false,
                   "controlAddress": "/pos_to",
                   "feedbackOnly": false,
@@ -870,7 +845,7 @@
             {
               "parameters": [
                 {
-                  "value": 5,
+                  "value": 0,
                   "hexMode": false,
                   "controlAddress": "/duration",
                   "feedbackOnly": false,
@@ -1018,7 +993,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -200,
+                                "value": 13,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1035,7 +1010,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -200,
+                              "value": 13,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1078,7 +1053,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/customVariables/values/control/duration",
@@ -1095,7 +1070,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/customVariables/values/control/duration",
@@ -1173,7 +1148,8 @@
                   {
                     "parameters": [
                       {
-                        "value": "/modules/oscMain/values/_offset",
+                        "value": "",
+                        "ghostValue": "/modules/oscMain/values/_offset",
                         "controlAddress": "/inputValue"
                       },
                       {
@@ -1182,17 +1158,7 @@
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
-                          "value": 1,
-                          "hexMode": false,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
+                    "type": "From Input Value"
                   }
                 ],
                 "viewOffset": [
@@ -1217,7 +1183,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -200,
+                                "value": 13,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1234,7 +1200,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -200,
+                              "value": 13,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1267,7 +1233,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/customVariables/values/control/duration",
@@ -1284,7 +1250,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/customVariables/values/control/duration",
@@ -1381,7 +1347,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -200,
+                                "value": 13,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/states/mapAngle/processors/mapping/outValues/out1",
@@ -1398,7 +1364,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -200,
+                              "value": 13,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/states/mapAngle/processors/mapping/outValues/out1",
@@ -1431,10 +1397,11 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/modules/oscMain/values/_duration",
+                                  "value": "",
+                                  "ghostValue": "/modules/oscMain/values/_duration",
                                   "controlAddress": "/reference"
                                 },
                                 "hexMode": false,
@@ -1448,10 +1415,11 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/modules/oscMain/values/_duration",
+                                "value": "",
+                                "ghostValue": "/modules/oscMain/values/_duration",
                                 "controlAddress": "/reference"
                               },
                               "hexMode": false,
@@ -1488,7 +1456,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -200,
+                          "value": 13,
                           "controlMode": 2,
                           "reference": {
                             "value": "/states/mapAngle/processors/mapping/outValues/out1",
@@ -1523,10 +1491,11 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 5,
+                          "value": 0,
                           "controlMode": 2,
                           "reference": {
-                            "value": "/modules/oscMain/values/_duration",
+                            "value": "",
+                            "ghostValue": "/modules/oscMain/values/_duration",
                             "controlAddress": "/reference"
                           },
                           "hexMode": false,
@@ -1557,7 +1526,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -200,
+                                "value": 13,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/states/mapAngle/processors/mapping/outValues/out1",
@@ -1570,7 +1539,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -200,
+                              "value": 13,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/states/mapAngle/processors/mapping/outValues/out1",
@@ -1619,7 +1588,8 @@
                   {
                     "parameters": [
                       {
-                        "value": "/modules/oscMain/values/_duration",
+                        "value": "",
+                        "ghostValue": "/modules/oscMain/values/_duration",
                         "controlAddress": "/inputValue"
                       },
                       {
@@ -1628,21 +1598,7 @@
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
-                          "value": "Change",
-                          "controlAddress": "/comparisonFunction"
-                        },
-                        {
-                          "value": 0,
-                          "hexMode": false,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
+                    "type": "From Input Value"
                   }
                 ],
                 "viewOffset": [
@@ -1667,7 +1623,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -200,
+                                "value": 13,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1684,7 +1640,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -200,
+                              "value": 13,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1717,10 +1673,11 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/modules/oscMain/values/_duration",
+                                  "value": "",
+                                  "ghostValue": "/modules/oscMain/values/_duration",
                                   "controlAddress": "/reference"
                                 },
                                 "hexMode": false,
@@ -1734,10 +1691,11 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/modules/oscMain/values/_duration",
+                                "value": "",
+                                "ghostValue": "/modules/oscMain/values/_duration",
                                 "controlAddress": "/reference"
                               },
                               "hexMode": false,
@@ -1774,10 +1732,11 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 5,
+                          "value": 0,
                           "controlMode": 2,
                           "reference": {
-                            "value": "/modules/oscMain/values/_duration",
+                            "value": "",
+                            "ghostValue": "/modules/oscMain/values/_duration",
                             "controlAddress": "/reference"
                           },
                           "hexMode": false,
@@ -1856,7 +1815,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -200,
+                                "value": 13,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1873,7 +1832,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -200,
+                              "value": 13,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1906,7 +1865,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/customVariables/values/control/duration",
@@ -1923,7 +1882,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/customVariables/values/control/duration",
@@ -1968,20 +1927,12 @@
                       {
                         "value": "/modules/oscMain/values/_acc",
                         "controlAddress": "/inputValue"
-                      },
-                      {
-                        "value": true,
-                        "controlAddress": "/alwaysTrigger"
                       }
                     ],
                     "niceName": "From Input Value",
                     "type": "From Input Value",
                     "comparator": {
                       "parameters": [
-                        {
-                          "value": "Change",
-                          "controlAddress": "/comparisonFunction"
-                        },
                         {
                           "value": 0,
                           "hexMode": false,
@@ -2014,7 +1965,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 113,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/modules/oscMain/values/_acc",
@@ -2031,7 +1982,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": 113,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/modules/oscMain/values/_acc",
@@ -2064,7 +2015,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 0,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/duration/duration",
@@ -2081,7 +2032,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 0,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/duration/duration",
