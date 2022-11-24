@@ -5,9 +5,10 @@
 AccelStepper stepper (1, 3, 4); 
 int vitesse=200, vitesse_home=100;
 int check_fin_course =0;
-int limit_capteur=260;
+int limit_capteur=250;
 
-int pos=0, mode=-1,duration;
+int pos=0, mode=-1;
+int duration;
 int check_home=0;
 int check_temps=0;
 int pos_offset;
@@ -22,7 +23,7 @@ void setup()
   Serial.begin(9600);
   // Change these to suit your stepper if you want
 
-  stepper.setAcceleration(100);
+  stepper.setAcceleration(50);
   
 
   Serial.setTimeout(100);
@@ -36,6 +37,9 @@ pinMode(6,OUTPUT);
   pos_offset =int( (byte1 << 8) + byte2);
 Serial.print( "home ");
 Serial.println(0);
+
+stepper.setMaxSpeed(vitesse_home);
+stepper.moveTo(limit_init);
 
 Serial.print( "offset ");
 Serial.println(pos_offset);
@@ -59,7 +63,7 @@ else{
    
     pos = (  ((data[1] & 0xFF) << 8) + (data[0] & 0xFF));
     mode = data[2];
-    duration =(  ((data[4] & 0xFF) << 8) + (data[3] & 0xFF));
+    duration =float((  ((data[4] & 0xFF) << 8) + (data[3] & 0xFF)));
     temps=millis();
 
 Serial.print( "pos ");
@@ -70,16 +74,11 @@ Serial.println(mode);
 Serial.print( "duration ");
 Serial.println(duration);
 
-vitesse= abs(pos-(stepper.currentPosition()-pos_offset))/duration;
+vitesse= (abs(pos-(stepper.currentPosition()-pos_offset))/duration)*100;
+Serial.print( "vitesse ");
+Serial.println(vitesse);
 
 switch (mode) {
-case 0 :
-check_home=0;
-Serial.print( "home ");
-Serial.println(check_home);
-Serial.print( "mode ");
-Serial.println(mode);
-break;
 
 case 1 :
 check_home=0;
@@ -87,8 +86,10 @@ Serial.print( "home ");
 Serial.println(check_home);
 Serial.print( "mode ");
 Serial.println(mode);
-vitesse_home=100;
 stepper.setCurrentPosition(0);
+stepper.setAcceleration(50);
+stepper.setMaxSpeed(vitesse_home);
+stepper.moveTo(limit_init);
 break;
 
 case 2 :
@@ -148,9 +149,11 @@ Serial.println(duration);
       check_temps=1;
     }
 
+}
+
 
 stepper.run();
 
-}
+
 
 }
