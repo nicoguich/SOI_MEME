@@ -128,6 +128,8 @@ break;
 
 case 7 :
   analogWrite(6,pos);
+  Serial.print("led ");
+  Serial.println(pos);
 break;
 
 
