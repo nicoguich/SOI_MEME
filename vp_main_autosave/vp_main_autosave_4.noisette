@@ -51,10 +51,10 @@
                 },
                 {
                   "value": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
                   "controlAddress": "/textColor",
                   "enabled": true
@@ -67,10 +67,10 @@
                 },
                 {
                   "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "controlAddress": "/borderColor",
                   "enabled": true
@@ -82,7 +82,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "brigtness",
@@ -108,20 +108,20 @@
                 },
                 {
                   "value": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
                   "controlAddress": "/textColor",
                   "enabled": true
                 },
                 {
                   "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "controlAddress": "/borderColor",
                   "enabled": true
@@ -137,7 +137,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "contrast",
@@ -163,10 +163,10 @@
                 },
                 {
                   "value": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
                   "controlAddress": "/textColor",
                   "enabled": true
@@ -188,7 +188,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "thresh",
@@ -219,7 +219,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "dir",
@@ -246,10 +246,10 @@
                 },
                 {
                   "value": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
                   "controlAddress": "/textColor",
                   "enabled": true
@@ -271,7 +271,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "taille_grille_X",
@@ -297,20 +297,20 @@
                 },
                 {
                   "value": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
                   "controlAddress": "/textColor",
                   "enabled": true
                 },
                 {
                   "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "controlAddress": "/borderColor",
                   "enabled": true
@@ -322,7 +322,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "taille_grille_Y",
@@ -348,20 +348,20 @@
                 },
                 {
                   "value": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
                   "controlAddress": "/textColor",
                   "enabled": true
                 },
                 {
                   "value": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "controlAddress": "/borderColor",
                   "enabled": true
@@ -373,7 +373,7 @@
                 {
                   "value": "",
                   "controlAddress": "/toggleImage",
-                  "enabled": true
+                  "enabled": false
                 }
               ],
               "niceName": "nb_table",
@@ -426,7 +426,7 @@
                 {
                   "type": 0,
                   "width": 273,
-                  "height": 380,
+                  "height": 374,
                   "currentContent": "Modules",
                   "tabs": [
                     {
@@ -437,7 +437,7 @@
                 {
                   "type": 0,
                   "width": 273,
-                  "height": 297,
+                  "height": 262,
                   "currentContent": "Custom Variables",
                   "tabs": [
                     {
@@ -448,7 +448,7 @@
                 {
                   "type": 0,
                   "width": 273,
-                  "height": 420,
+                  "height": 459,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -466,7 +466,7 @@
             },
             {
               "type": 0,
-              "width": 1116,
+              "width": 1157,
               "height": 1109,
               "currentContent": "State Machine",
               "tabs": [
@@ -489,7 +489,7 @@
             },
             {
               "type": 0,
-              "width": 519,
+              "width": 478,
               "height": 1109,
               "currentContent": "Inspector",
               "tabs": [
@@ -525,10 +525,6 @@
         "params": {
           "parameters": [
             {
-              "value": "Arduino LLC Arduino Leonardo (SN : 2341:8036 )",
-              "controlAddress": "/port"
-            },
-            {
               "value": 9600,
               "hexMode": false,
               "controlAddress": "/baudRate"
@@ -549,7 +545,7 @@
         "values": {
           "parameters": [
             {
-              "value": -6.0,
+              "value": -290.0,
               "controlAddress": "/pos",
               "type": "Float",
               "niceName": "pos",
@@ -560,7 +556,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 1,
+              "value": 71,
               "hexMode": false,
               "controlAddress": "/duration",
               "type": "Integer",
@@ -572,7 +568,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 2238,
+              "value": 4726,
               "hexMode": false,
               "controlAddress": "/temps",
               "type": "Integer",
@@ -596,6 +592,7 @@
               "feedbackOnly": false
             },
             {
+              "value": 380,
               "hexMode": false,
               "controlAddress": "/offset",
               "type": "Integer",
@@ -618,13 +615,56 @@
               "feedbackOnly": false
             },
             {
-              "value": 1.0,
+              "value": 4.0,
               "controlAddress": "/mode",
               "type": "Float",
               "niceName": "mode",
               "customizable": true,
               "removable": true,
               "description": "mode",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 1.0,
+              "controlAddress": "/receive",
+              "type": "Float",
+              "niceName": "receive",
+              "customizable": true,
+              "removable": true,
+              "description": "receive",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 20.0,
+              "controlAddress": "/led",
+              "type": "Float",
+              "niceName": "led",
+              "customizable": true,
+              "removable": true,
+              "description": "led",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "controlAddress": "/517",
+              "type": "Trigger",
+              "niceName": "517",
+              "customizable": true,
+              "removable": true,
+              "description": "517",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 700.0,
+              "controlAddress": "/vitesse",
+              "type": "Float",
+              "niceName": "vitesse",
+              "customizable": true,
+              "removable": true,
+              "description": "vitesse",
               "hideInEditor": false,
               "feedbackOnly": false
             }
@@ -705,11 +745,11 @@
         "values": {
           "parameters": [
             {
-              "value": 1,
+              "value": 105,
               "hexMode": false,
-              "controlAddress": "/_duration",
+              "controlAddress": "/_acc",
               "type": "Integer",
-              "niceName": "/duration",
+              "niceName": "/acc",
               "customizable": true,
               "removable": true,
               "description": "",
@@ -726,38 +766,59 @@
               "removable": true,
               "description": "",
               "hideInEditor": false,
-              "feedbackOnly": false
+              "feedbackOnly": false,
+              "shortName": "_home"
             },
             {
-              "value": -1,
-              "hexMode": false,
               "controlAddress": "/_offset",
-              "type": "Integer",
+              "type": "Trigger",
               "niceName": "/offset",
               "customizable": true,
               "removable": true,
               "description": "",
               "hideInEditor": false,
-              "feedbackOnly": false
+              "feedbackOnly": false,
+              "shortName": "_offset"
             },
             {
-              "value": -6,
-              "hexMode": false,
-              "controlAddress": "/_pos_to",
-              "type": "Integer",
-              "niceName": "/pos_to",
+              "controlAddress": "/_stop",
+              "type": "Trigger",
+              "niceName": "/stop",
               "customizable": true,
               "removable": true,
               "description": "",
               "hideInEditor": false,
               "feedbackOnly": false,
-              "shortName": "_pos_to"
+              "shortName": "_stop"
             },
             {
+              "value": 20,
               "hexMode": false,
-              "controlAddress": "/_stop",
+              "controlAddress": "/_led",
               "type": "Integer",
-              "niceName": "/stop",
+              "niceName": "/led",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 43.43626403808594,
+              "controlAddress": "/_pos_to",
+              "type": "Float",
+              "niceName": "/pos_to",
+              "customizable": true,
+              "removable": true,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0.7117563486099243,
+              "controlAddress": "/_duration",
+              "type": "Float",
+              "niceName": "/duration",
               "customizable": true,
               "removable": true,
               "description": "",
@@ -823,7 +884,7 @@
             {
               "parameters": [
                 {
-                  "value": -6,
+                  "value": -290,
                   "hexMode": false,
                   "controlAddress": "/pos_to",
                   "feedbackOnly": false,
@@ -842,7 +903,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 71,
                   "hexMode": false,
                   "controlAddress": "/duration",
                   "feedbackOnly": false,
@@ -886,10 +947,17 @@
         "parameters": [
           {
             "value": [
-              -133.0,
-              -1845.0
+              -227.0,
+              -1875.0
             ],
             "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              305.0,
+              279.0
+            ],
+            "controlAddress": "/viewUISize"
           },
           {
             "value": true,
@@ -928,30 +996,6 @@
                     "comparator": {
                       "parameters": [
                         {
-                          "value": 0,
-                          "hexMode": false,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": "/modules/oscMain/values/_home",
-                        "controlAddress": "/inputValue"
-                      },
-                      {
-                        "value": true,
-                        "controlAddress": "/alwaysTrigger"
-                      }
-                    ],
-                    "niceName": "From Input Value 1",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
                           "value": 1,
                           "hexMode": false,
                           "controlAddress": "/reference"
@@ -983,7 +1027,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -6,
+                                "value": -290,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1000,7 +1044,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -6,
+                              "value": -290,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1043,7 +1087,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 71,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/customVariables/values/control/duration",
@@ -1060,7 +1104,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 71,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/customVariables/values/control/duration",
@@ -1147,17 +1191,7 @@
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
-                          "value": 1,
-                          "hexMode": false,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
+                    "type": "From Input Value"
                   }
                 ],
                 "viewOffset": [
@@ -1182,7 +1216,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -6,
+                                "value": -290,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1199,7 +1233,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -6,
+                              "value": -290,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1232,7 +1266,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 71,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/customVariables/values/control/duration",
@@ -1249,7 +1283,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 71,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/customVariables/values/control/duration",
@@ -1298,7 +1332,7 @@
                   {
                     "parameters": [
                       {
-                        "value": "/modules/oscMain/values/_pos_to",
+                        "value": "/states/mapValue/processors/angle/outValues/out1",
                         "controlAddress": "/inputValue"
                       },
                       {
@@ -1311,11 +1345,7 @@
                     "comparator": {
                       "parameters": [
                         {
-                          "value": "Change",
-                          "controlAddress": "/comparisonFunction"
-                        },
-                        {
-                          "value": 0,
+                          "value": -290,
                           "hexMode": false,
                           "controlAddress": "/reference"
                         }
@@ -1346,10 +1376,10 @@
                           {
                             "parameters": [
                               {
-                                "value": -6,
+                                "value": -290,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/modules/oscMain/values/_pos_to",
+                                  "value": "/states/mapValue/processors/angle/outValues/out1",
                                   "controlAddress": "/reference"
                                 },
                                 "hexMode": false,
@@ -1363,10 +1393,10 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -6,
+                              "value": -290,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/modules/oscMain/values/_pos_to",
+                                "value": "/states/mapValue/processors/angle/outValues/out1",
                                 "controlAddress": "/reference"
                               },
                               "hexMode": false,
@@ -1396,10 +1426,10 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 71,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/modules/oscMain/values/_duration",
+                                  "value": "/states/mapValue/processors/duration/outValues/out1",
                                   "controlAddress": "/reference"
                                 },
                                 "hexMode": false,
@@ -1413,10 +1443,10 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 71,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/modules/oscMain/values/_duration",
+                                "value": "/states/mapValue/processors/duration/outValues/out1",
                                 "controlAddress": "/reference"
                               },
                               "hexMode": false,
@@ -1453,10 +1483,10 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -6,
+                          "value": -290,
                           "controlMode": 2,
                           "reference": {
-                            "value": "/modules/oscMain/values/_pos_to",
+                            "value": "/states/mapValue/processors/angle/outValues/out1",
                             "controlAddress": "/reference"
                           },
                           "hexMode": false,
@@ -1488,7 +1518,6 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscMain/values/_duration",
@@ -1499,6 +1528,58 @@
                         }
                       ],
                       "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 3",
+                    "type": "Consequence",
+                    "commandModule": "oscMain",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/pos",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": -290,
+                                "controlMode": 2,
+                                "reference": {
+                                  "value": "/states/mapValue/processors/angle/outValues/out1",
+                                  "controlAddress": "/reference"
+                                },
+                                "hexMode": false,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Integer",
+                            "param": {
+                              "value": -290,
+                              "controlMode": 2,
+                              "reference": {
+                                "value": "/states/mapValue/processors/angle/outValues/out1",
+                                "controlAddress": "/reference"
+                              },
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/pos/consequencesTRUE/consequence3/command/arguments/#1/#1"
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
                       }
                     }
                   }
@@ -1532,7 +1613,7 @@
                   {
                     "parameters": [
                       {
-                        "value": "/modules/oscMain/values/_duration",
+                        "value": "/states/mapValue/processors/duration/outValues/out1",
                         "controlAddress": "/inputValue"
                       },
                       {
@@ -1545,11 +1626,7 @@
                     "comparator": {
                       "parameters": [
                         {
-                          "value": "Change",
-                          "controlAddress": "/comparisonFunction"
-                        },
-                        {
-                          "value": 0,
+                          "value": 71,
                           "hexMode": false,
                           "controlAddress": "/reference"
                         }
@@ -1580,7 +1657,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -6,
+                                "value": -290,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1597,7 +1674,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -6,
+                              "value": -290,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1630,10 +1707,10 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 71,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/modules/oscMain/values/_duration",
+                                  "value": "/states/mapValue/processors/duration/outValues/out1",
                                   "controlAddress": "/reference"
                                 },
                                 "hexMode": false,
@@ -1647,10 +1724,10 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 71,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/modules/oscMain/values/_duration",
+                                "value": "/states/mapValue/processors/duration/outValues/out1",
                                 "controlAddress": "/reference"
                               },
                               "hexMode": false,
@@ -1687,10 +1764,10 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 1,
+                          "value": 71,
                           "controlMode": 2,
                           "reference": {
-                            "value": "/modules/oscMain/values/_duration",
+                            "value": "/states/mapValue/processors/duration/outValues/out1",
                             "controlAddress": "/reference"
                           },
                           "hexMode": false,
@@ -1734,17 +1811,7 @@
                       }
                     ],
                     "niceName": "From Input Value",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
-                          "value": 1,
-                          "hexMode": false,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
+                    "type": "From Input Value"
                   }
                 ],
                 "viewOffset": [
@@ -1769,7 +1836,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -6,
+                                "value": -290,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1786,7 +1853,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": -6,
+                              "value": -290,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/control/variables/pos_to/pos_to",
@@ -1819,7 +1886,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 71,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/customVariables/values/control/duration",
@@ -1836,7 +1903,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 71,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/customVariables/values/control/duration",
@@ -1863,6 +1930,593 @@
                 "viewZoom": 1.0
               },
               "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "acceleration",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMain/values/_acc",
+                        "controlAddress": "/inputValue"
+                      },
+                      {
+                        "value": true,
+                        "controlAddress": "/alwaysTrigger"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": "Change",
+                          "controlAddress": "/comparisonFunction"
+                        },
+                        {
+                          "value": 0,
+                          "hexMode": false,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "serial",
+                    "commandPath": "",
+                    "commandType": "Send custom values",
+                    "command": {
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 105,
+                                "controlMode": 2,
+                                "reference": {
+                                  "value": "/modules/oscMain/values/_acc",
+                                  "controlAddress": "/reference"
+                                },
+                                "hexMode": false,
+                                "controlAddress": "/#1"
+                              },
+                              {
+                                "value": "2 bytes (Int16)",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Integer",
+                            "param": {
+                              "value": 105,
+                              "controlMode": 2,
+                              "reference": {
+                                "value": "/modules/oscMain/values/_acc",
+                                "controlAddress": "/reference"
+                              },
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/acceleration/consequencesTRUE/consequence/command/arguments/#1/#1"
+                            }
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 6,
+                                "hexMode": false,
+                                "controlAddress": "/#2"
+                              },
+                              {
+                                "value": "1 byte",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#2",
+                            "type": "Integer",
+                            "param": {
+                              "value": 6,
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/acceleration/consequencesTRUE/consequence/command/arguments/#2/#2"
+                            }
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 71,
+                                "controlMode": 2,
+                                "reference": {
+                                  "value": "/customVariables/control/variables/duration/duration",
+                                  "controlAddress": "/reference"
+                                },
+                                "hexMode": false,
+                                "controlAddress": "/#3"
+                              },
+                              {
+                                "value": "2 bytes (Int16)",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#3",
+                            "type": "Integer",
+                            "param": {
+                              "value": 71,
+                              "controlMode": 2,
+                              "reference": {
+                                "value": "/customVariables/control/variables/duration/duration",
+                                "controlAddress": "/reference"
+                              },
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/acceleration/consequencesTRUE/consequence/command/arguments/#3/#3"
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "led",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMain/values/_led",
+                        "controlAddress": "/inputValue"
+                      },
+                      {
+                        "value": true,
+                        "controlAddress": "/alwaysTrigger"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": "Change",
+                          "controlAddress": "/comparisonFunction"
+                        },
+                        {
+                          "value": 0,
+                          "hexMode": false,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "serial",
+                    "commandPath": "",
+                    "commandType": "Send custom values",
+                    "command": {
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 20,
+                                "controlMode": 2,
+                                "reference": {
+                                  "value": "/modules/oscMain/values/_led",
+                                  "controlAddress": "/reference"
+                                },
+                                "hexMode": false,
+                                "controlAddress": "/#1"
+                              },
+                              {
+                                "value": "2 bytes (Int16)",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Integer",
+                            "param": {
+                              "value": 20,
+                              "controlMode": 2,
+                              "reference": {
+                                "value": "/modules/oscMain/values/_led",
+                                "controlAddress": "/reference"
+                              },
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/led/consequencesTRUE/consequence/command/arguments/#1/#1"
+                            }
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 7,
+                                "hexMode": false,
+                                "controlAddress": "/#2"
+                              },
+                              {
+                                "value": "1 byte",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#2",
+                            "type": "Integer",
+                            "param": {
+                              "value": 7,
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/led/consequencesTRUE/consequence/command/arguments/#2/#2"
+                            }
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 71,
+                                "controlMode": 2,
+                                "reference": {
+                                  "value": "/customVariables/control/variables/duration/duration",
+                                  "controlAddress": "/reference"
+                                },
+                                "hexMode": false,
+                                "controlAddress": "/#3"
+                              },
+                              {
+                                "value": "2 bytes (Int16)",
+                                "controlAddress": "/precision"
+                              }
+                            ],
+                            "niceName": "#3",
+                            "type": "Integer",
+                            "param": {
+                              "value": 71,
+                              "controlMode": 2,
+                              "reference": {
+                                "value": "/customVariables/control/variables/duration/duration",
+                                "controlAddress": "/reference"
+                              },
+                              "hexMode": false,
+                              "controlAddress": "/states/receiveOsc/processors/led/consequencesTRUE/consequence/command/arguments/#3/#3"
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -227.0,
+              -1575.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              262.0,
+              153.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "map value",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "angle",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMain/values/_pos_to",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Math",
+                    "type": "Math",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Multiply",
+                          "controlAddress": "/operation"
+                        },
+                        {
+                          "value": -2400.0,
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    },
+                    "operationValue": {
+                      "value": -2400.0,
+                      "controlAddress": "/states/mapValue/processors/angle/filters/math/filterParams/value"
+                    }
+                  },
+                  {
+                    "niceName": "Math 1",
+                    "type": "Math",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Divide",
+                          "controlAddress": "/operation"
+                        },
+                        {
+                          "value": 360.0,
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    },
+                    "operationValue": {
+                      "value": 360.0,
+                      "controlAddress": "/states/mapValue/processors/angle/filters/math1/filterParams/value"
+                    }
+                  },
+                  {
+                    "niceName": "Convert To Integer",
+                    "type": "Convert To Integer",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "",
+                          "controlAddress": "/retargetComponent"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    },
+                    "ghostOptions": {
+                      "retarget": null
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/receiveOsc/processors/pos",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "duration",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMain/values/_duration",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Math",
+                    "type": "Math",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Multiply",
+                          "controlAddress": "/operation"
+                        },
+                        {
+                          "value": 100.0,
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    },
+                    "operationValue": {
+                      "value": 100.0,
+                      "controlAddress": "/states/mapValue/processors/duration/filters/math/filterParams/value"
+                    }
+                  },
+                  {
+                    "niceName": "Convert To Integer",
+                    "type": "Convert To Integer",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "",
+                          "controlAddress": "/retargetComponent"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    },
+                    "ghostOptions": {
+                      "retarget": null
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/receiveOsc/processors/duration",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -2020,7 +2674,7 @@
                                 0,
                                 0
                               ],
-                              "viewZoom": 1.0
+                              "viewZoom": 1
                             }
                           },
                           "ghostModuleName": "oscTablette",

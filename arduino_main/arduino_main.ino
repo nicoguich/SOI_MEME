@@ -74,7 +74,7 @@ Serial.println(mode);
 Serial.print( "duration ");
 Serial.println(duration);
 
-vitesse= (abs(pos-(stepper.currentPosition()-pos_offset))/duration)*100;
+vitesse= ((abs(pos-(stepper.currentPosition()-pos_offset))*100)/duration);
 Serial.print( "vitesse ");
 Serial.println(vitesse);
 
