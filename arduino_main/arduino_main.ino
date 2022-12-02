@@ -30,7 +30,12 @@ void setup()
 
 
 pinMode(6,OUTPUT);
-
+/*
+  EEPROM.write(0,0);
+  delay(200);
+  EEPROM.write( 1, 0);
+*/
+  delay(200);
   
   byte byte1 = EEPROM.read(0);
   byte byte2 = EEPROM.read(1);
@@ -54,7 +59,7 @@ if (check_home==0){
 }
 
 
-else{
+
   if (Serial.available() > 0) {
 
 
@@ -93,12 +98,15 @@ stepper.moveTo(limit_init);
 break;
 
 case 2 :
+if (check_home==1){
 stepper.moveTo(pos+pos_offset);
 stepper.setMaxSpeed(200);
 check_temps=0;
+}
 break;
 
 case 3 :
+if (check_home==1){
 pos_offset=stepper.currentPosition();
 
   EEPROM.write(0, byte(pos_offset >> 8));
@@ -107,19 +115,25 @@ pos_offset=stepper.currentPosition();
 delay(200);
 Serial.print( "offset ");
 Serial.println(pos_offset);
-
+}
 break;
 
 case 4 :
+if (check_home==1){
 stepper.moveTo(pos+pos_offset);
 stepper.setMaxSpeed(vitesse);
 check_temps=0;
 Serial.print("receive ");
 Serial.println(1);
+}
 break;
 
 case 5 :
 stepper.stop();
+if (check_home==0){
+stepper.setCurrentPosition(0);
+check_home=1;
+}
 break;
 
 
@@ -149,7 +163,7 @@ Serial.println(duration);
       check_temps=1;
     }
 
-}
+
 
 
 stepper.run();
